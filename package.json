@@ -1,0 +1,36 @@
+{
+  "name": "desafio-ignite-node-modulo-02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "knex": "node --import tsx ./node_modules/knex/bin/cli.js",
+    "lint:check": "npx eslint src --ext .ts",
+    "lint:fix": "npx eslint src --ext .ts --fix",
+    "prettier:check": "npx prettier src/**/*.{js,jsx,ts,tsx} --check",
+    "prettier:fix": "npx prettier src/**/*.{js,jsx,ts,tsx} --write",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "José Eduardo Trindade E Marques",
+  "license": "ISC",
+  "dependencies": {
+    "@fastify/cookie": "^11.0.2",
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.1",
+    "knex": "^3.1.0",
+    "sqlite3": "^5.1.7",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@types/supertest": "^6.0.2",
+    "eslint": "^9.17.0",
+    "prettier": "^3.4.2",
+    "supertest": "^7.0.0",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
